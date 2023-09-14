@@ -1,0 +1,208 @@
+{
+	"id": "caee2455-5661-4d6a-8da3-dd93c5d55fea",
+	"name": "ServiceNow",
+	"timestamp": "2023-09-14T15:20:48.957Z",
+	"collection_id": "29571094-77eae232-9fa6-4582-a7aa-2837be9ad584",
+	"folder_id": 0,
+	"environment_id": "29571094-f90334d6-e855-402a-b721-1a1b5fe25d84",
+	"totalPass": 6,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-09-14T15:20:43.947Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "e9a77fc1-1c80-4ed7-bada-9d84d82018f7",
+			"name": "RetrieveAll",
+			"url": "https://dev144115.service-now.com/api/now/table/incident?sysparm_limit=1",
+			"time": 373,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				373
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "1eb10161-eebd-4123-9b69-43e02045f82b",
+			"name": "Create",
+			"url": "https://dev144115.service-now.com/api/now/table/incident",
+			"time": 735,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				735
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "3e2cdfa5-124b-4b45-8e34-53b42cf9c971",
+			"name": "RetriveOne",
+			"url": "https://dev144115.service-now.com/api/now/table/incident/690ad19d971171102c7878300153afa3?i",
+			"time": 705,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				705
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "859ea5b1-f2ce-4cc3-86da-b8ff016fc16d",
+			"name": "ModifyRecord",
+			"url": "https://dev144115.service-now.com/api/now/table/incident/690ad19d971171102c7878300153afa3",
+			"time": 727,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				727
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5726a3dd-a35e-4e49-85f5-b8b2b0314831",
+			"name": "UpdateRecord",
+			"url": "https://dev144115.service-now.com/api/now/table/incident/690ad19d971171102c7878300153afa3",
+			"time": 725,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				725
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "6aed1eab-fd82-4f65-abfb-35a56903f894",
+			"name": "DeleteRecord",
+			"url": "https://dev144115.service-now.com/api/now/table/incident/690ad19d971171102c7878300153afa3",
+			"time": 436,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				436
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3701,
+	"collection": {
+		"requests": [
+			{
+				"id": "e9a77fc1-1c80-4ed7-bada-9d84d82018f7",
+				"method": "GET"
+			},
+			{
+				"id": "1eb10161-eebd-4123-9b69-43e02045f82b",
+				"method": "POST"
+			},
+			{
+				"id": "3e2cdfa5-124b-4b45-8e34-53b42cf9c971",
+				"method": "GET"
+			},
+			{
+				"id": "859ea5b1-f2ce-4cc3-86da-b8ff016fc16d",
+				"method": "PUT"
+			},
+			{
+				"id": "5726a3dd-a35e-4e49-85f5-b8b2b0314831",
+				"method": "PATCH"
+			},
+			{
+				"id": "6aed1eab-fd82-4f65-abfb-35a56903f894",
+				"method": "DELETE"
+			}
+		]
+	}
+}
